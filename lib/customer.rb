@@ -12,8 +12,10 @@ class Customer
   end 
   
   def new_meal(waiter, total, tip=0)
-    Meal.new(waiter, self, total, tip) #initializes a meal using the current Customer instance, a provided Waiterinstance and a total and tip
+    Meal.new(waiter, self, total, tip) #initializes a meal using the current Customer instance, a provided Waiter instance and a total and tip
   end
   
+  def meals 
+    @@all.self 
   
 end
