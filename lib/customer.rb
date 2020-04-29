@@ -17,5 +17,5 @@ class Customer
   
   def meals 
     @@all.self 
-  
+  end 
 end
