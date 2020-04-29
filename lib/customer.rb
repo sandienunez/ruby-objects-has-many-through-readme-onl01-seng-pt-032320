@@ -16,7 +16,7 @@ class Customer
   end
   
   def meals
-    Meal.all.select do |meal|
+    Meal.all.select do |meal| #returns an Array of Meal instances associated with this customer
       meal.customer == self
     end
   end 
