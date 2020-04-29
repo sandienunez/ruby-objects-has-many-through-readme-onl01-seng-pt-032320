@@ -28,16 +28,16 @@ def new_meal(customer, total, tip = 0)
         end.uniq
     end
 
-    def highest_tip
-        highest_tip = 0
-        highest_tipper = nil
+    def best_tipper
+        best_tipper = 0
+        best_tipper = nil
         meals.each do |customer|
-            if customer.tip > highest_tip
-                highest_tip = customer.tip
+            if customer.tipper > best_tipper
+                best_tipper = customer.tipper
                 highest_tipper = customer
             end
         end
-        highest_tipper
+        best_tipper
     end
 
     def self.avg_yrs_of_experience
