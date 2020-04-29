@@ -1,9 +1,9 @@
 class Customer
- attr_accessor :name, :yrs_experience
+ attr_accessor :name, :age
   @@all = [] 
-  def initialize(name, yrs_experience)
+  def initialize(name, age)
     @name = name 
-    @yrs_experience = yrs_experience 
+    @age = age
     @@all << self 
   end 
   
