@@ -10,4 +10,6 @@ class Customer
   def self.all 
     @@all 
   end 
+  
+  def new
 end
