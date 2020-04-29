@@ -21,15 +21,8 @@ def new_meal(customer, total, tip = 0)
     end
 
     def best_tipper
-        best_tipper = 0
-        best_tipper = nil
-        meals.each do |customer|
-            if customer.tipper > best_tipper
-                best_tipper = customer.tipper
-                highest_tipper = customer
-            end
-        end
-        best_tipper
-    end
+  best_tipped_meal = meals.max do |meal_a, meal_b|
+    meal_a.tip <=> meal_b.tip
+  end
 
 end 
