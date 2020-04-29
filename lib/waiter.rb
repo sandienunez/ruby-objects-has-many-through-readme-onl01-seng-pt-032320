@@ -20,13 +20,6 @@ def new_meal(customer, total, tip = 0)
         end
     end
 
-    def customers
-        meals.map do |meal|
-            meal.customer
-        end.map do |customer|
-            customer.name
-        end.uniq
-    end
 
     def best_tipper
         best_tipper = 0
