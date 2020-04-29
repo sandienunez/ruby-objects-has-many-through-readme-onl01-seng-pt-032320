@@ -15,7 +15,8 @@ class Customer
     Meal.new(waiter, self, total, tip) #initializes a meal using the current Customer instance, a provided Waiter instance and a total and tip
   end
   
-  def meals 
-    @@all.self 
-  end 
+  def meals
+    Meal.all.select do |meal|
+      meal.customer == self
+    end
 end
